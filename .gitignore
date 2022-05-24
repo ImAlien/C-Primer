@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+#me
+*.dSYM
+*.plist
