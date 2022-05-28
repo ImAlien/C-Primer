@@ -34,3 +34,6 @@
 #me
 *.dSYM
 *.plist
+
+#vscode
+.json
