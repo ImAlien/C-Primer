@@ -1,29 +1,25 @@
+
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "cppbuild",
-			"label": "C/C++: clang++ 生成活动文件",
-			"command": "/usr/bin/clang++",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"${file}",
-				"-std=c++17",
-				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"detail": "编译器: /usr/bin/clang++"
-		}
-	]
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++", //这里注意一下，要跟launch中的prelaumch一样
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
 }
