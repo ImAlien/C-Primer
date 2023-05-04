@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
 
 class HasPtr{
@@ -37,7 +37,7 @@ HasPtr& HasPtr::operator=(const HasPtr &other){
 
 int main()
 {
-   cout << sizeof (size_t) << endl;
+   std::cout << sizeof (size_t) << std::endl;
    system("pause");
    return 0;
 }
